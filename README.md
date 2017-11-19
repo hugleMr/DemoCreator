@@ -1,2 +1,2 @@
-# hello-world
-Hello world new project template.
+# Demo creator
+Demo project template.
