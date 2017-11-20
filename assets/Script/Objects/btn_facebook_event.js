@@ -7,14 +7,20 @@ cc.Class({
     },
 
     init: function() {
-        sdkbox.PluginFacebook.setListener({
-            onLogin: function(isLogin, msg) {
-
-            }
-        });
+	    if(cc.sys.os === cc.sys.OS_IOS || cc.sys.os === cc.sys.OS_ANDROID){
+            sdkbox.PluginFacebook.setListener({
+                onLogin: function(isLogin, msg) {
+                    cc.log("yyyy")
+                }
+            });
+        }
     },
 
     login: function() {
-        sdkbox.PluginFacebook.login();
+        if(cc.sys.os === cc.sys.OS_IOS || cc.sys.os === cc.sys.OS_ANDROID){
+            sdkbox.PluginFacebook.login();
+        }
+
+        cc.log("xxxxxx")
     }
 });
