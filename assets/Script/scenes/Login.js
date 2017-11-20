@@ -7,8 +7,9 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.btn_fb.node.setPosition(0,0)
-    },
+    	//var size = cc.director.getVisibleSize();
+        //this.btn_fb.node.setPosition(0,size.height/2)
+    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
